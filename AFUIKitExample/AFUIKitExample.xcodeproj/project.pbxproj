@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420013881D61BA1100411A92 /* UITextField+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420013871D61BA1100411A92 /* UITextField+AFExtension.swift */; };
 		42712D941D5489D6005546E0 /* UIImageView+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42712D931D5489D6005546E0 /* UIImageView+AFExtension.swift */; };
 		42E4D8041D51C6A500752645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4D8031D51C6A500752645 /* AppDelegate.swift */; };
 		42E4D8061D51C6A500752645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4D8051D51C6A500752645 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420013871D61BA1100411A92 /* UITextField+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+AFExtension.swift"; sourceTree = "<group>"; };
 		42712D931D5489D6005546E0 /* UIImageView+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+AFExtension.swift"; sourceTree = "<group>"; };
 		42E4D8001D51C6A500752645 /* AFUIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFUIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E4D8031D51C6A500752645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		42E4D8151D51C6ED00752645 /* AFUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				420013871D61BA1100411A92 /* UITextField+AFExtension.swift */,
 				42E4D8161D51C78200752645 /* UIView+AFExtension.swift */,
 				42FB2B1A1D58279700BAEE8A /* UITableView+AFExtension.swift */,
 				42FB2B161D5821BA00BAEE8A /* UIViewController+AFExtension.swift */,
@@ -193,6 +196,7 @@
 				42712D941D5489D6005546E0 /* UIImageView+AFExtension.swift in Sources */,
 				42E4D8191D51CC1100752645 /* UIButton+AFExtension.swift in Sources */,
 				42E4D8041D51C6A500752645 /* AppDelegate.swift in Sources */,
+				420013881D61BA1100411A92 /* UITextField+AFExtension.swift in Sources */,
 				42FB2B171D5821BA00BAEE8A /* UIViewController+AFExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
