@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name          = "AFUIKit"
-s.version       = "1.0.0"
+s.version       = "1.0.1"
 s.license       = { :type => "MIT", :file => "LICENSE" }
 s.summary       = "Swift UIKit chained calls Framework"
 s.homepage      = "https://github.com/myafer"
