@@ -1,17 +1,16 @@
 Pod::Spec.new do |s|
 
-s.name         = "AFUIKit"
-s.version      = "1.0.0"
-s.summary      = "AFUIKit"
-s.homepage     = "https://github.com/myafer"
-s.license      = { :type => "MIT", :file => "LICENSE" }
-s.author       = { "Afer" => "791143125@qq.com" }
-s.platform     = :ios, "7.0"
-s.ios.deployment_target = "7.0"
-s.source       = { :git => "https://github.com/myafer/AFUIKit.git", :tag => "#{s.version}" }
-s.source_files  = "AFUIKit/**/*.{swift}"
-
-
-s.requires_arc = true
-
+  s.name         = "AFUIKit"
+  s.platform = :ios
+  s.ios.deployment_target = '7.0'
+  s.version      = "1.0.0"
+  s.summary      = "AFUIKit"
+  s.description  = <<-DESC
+                  Swift UIKit chained calls Framework
+                   DESC
+  s.homepage     = "https://github.com/myafer"
+  s.license      = { :type => "MIT", :file => "license" }
+  s.author             = { "ScrButton" => "" }
+  s.source       = { :git => "https://github.com/myafer/AFUIKit.git", :tag => "0.0.2" }
+  s.source_files  = "AFUIKit", "AFUIKit/**/*.{swift}"
 end
