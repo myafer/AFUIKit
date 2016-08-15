@@ -12,74 +12,74 @@ extension UIButton {
     
     // MARK: Button targer
     
-    func target(target: AnyObject?, action: Selector, forControlEvents: UIControlEvents) -> Self {
+    public func target(target: AnyObject?, action: Selector, forControlEvents: UIControlEvents) -> Self {
         addTarget(target, action: action, forControlEvents: forControlEvents)
         return self
     }
 
     // MARK: button title
     
-    func title(value: String, state: UIControlState) -> Self {
+    public func title(value: String, state: UIControlState) -> Self {
         setTitle(value, forState: state)
         return self
     }
     
-    func nomalStateTitle(value: String) -> Self {
+    public func nomalStateTitle(value: String) -> Self {
         setTitle(value, forState: .Normal)
         return self
     }
     
-    func highlightedStateTitle(value: String) -> Self {
+    public func highlightedStateTitle(value: String) -> Self {
         setTitle(value, forState: .Highlighted)
         return self
     }
 
     
-    func selectedStateTitle(value: String) -> Self {
+    public func selectedStateTitle(value: String) -> Self {
         setTitle(value, forState: .Selected)
         return self
     }
     
     // MARK: button title color
     
-    func titleColor(value: UIColor, state: UIControlState) -> Self {
+    public func titleColor(value: UIColor, state: UIControlState) -> Self {
         setTitleColor(value, forState: state)
         return self
     }
     
-    func nomalStateTitleColor(value: UIColor) -> Self {
+    public func nomalStateTitleColor(value: UIColor) -> Self {
         setTitleColor(value, forState: .Normal)
         return self
     }
     
-    func highlightedStateTitleColor(value: UIColor) -> Self {
+    public func highlightedStateTitleColor(value: UIColor) -> Self {
         setTitleColor(value, forState: .Highlighted)
         return self
     }
     
-    func selectedStateTitleColor(value: UIColor) -> Self {
+    public func selectedStateTitleColor(value: UIColor) -> Self {
         setTitleColor(value, forState: .Selected)
         return self
     }
     
     // MARK: button title shadow color 
     
-    func titleShadowColor(value: UIColor, state: UIControlState) -> Self {
+    public func titleShadowColor(value: UIColor, state: UIControlState) -> Self {
         setTitleShadowColor(value, forState: state)
         return self
     }
     
-    func nomalStateTitleShadowColor(value: UIColor) -> Self {
+    public func nomalStateTitleShadowColor(value: UIColor) -> Self {
         setTitleShadowColor(value, forState: .Normal)
         return self
     }
     
-    func highlightedStateTitleShadowColor(value: UIColor) -> Self {
+    public func highlightedStateTitleShadowColor(value: UIColor) -> Self {
         setTitleShadowColor(value, forState: .Highlighted)
         return self
     }
     
-    func selectedStateTitleShadowColor(value: UIColor) -> Self {
+    public func selectedStateTitleShadowColor(value: UIColor) -> Self {
         setTitleShadowColor(value, forState: .Selected)
         return self
     }
@@ -87,68 +87,68 @@ extension UIButton {
     
     // MARK: button image
     
-    func image(value: UIImage, state: UIControlState) -> Self {
+    public func image(value: UIImage, state: UIControlState) -> Self {
         setImage(value, forState: state)
         return self
     }
     
-    func nomalStateImage(value: UIImage) -> Self {
+    public func nomalStateImage(value: UIImage) -> Self {
         setImage(value, forState: .Normal)
         return self
     }
     
-    func highlightedStateImage(value: UIImage) -> Self {
+    public func highlightedStateImage(value: UIImage) -> Self {
         setImage(value, forState: .Highlighted)
         return self
     }
     
     
-    func selectedStateImage(value: UIImage) -> Self {
+    public func selectedStateImage(value: UIImage) -> Self {
         setImage(value, forState: .Selected)
         return self
     }
     
     // MARK: button background image
     
-    func backgroundImage(image: UIImage, state: UIControlState) -> Self {
+    public func backgroundImage(image: UIImage, state: UIControlState) -> Self {
         setBackgroundImage(image, forState: state)
         return self
     }
     
-    func nomalStateBackgroundImage(value: UIImage) -> Self {
+    public func nomalStateBackgroundImage(value: UIImage) -> Self {
         setBackgroundImage(value, forState: .Normal)
         return self
     }
     
-    func highlightedStateBackgroundImage(value: UIImage) -> Self {
+    public func highlightedStateBackgroundImage(value: UIImage) -> Self {
         setBackgroundImage(value, forState: .Highlighted)
         return self
     }
     
     
-    func selectedStateBackgroundImage(value: UIImage) -> Self {
+    public func selectedStateBackgroundImage(value: UIImage) -> Self {
         setBackgroundImage(value, forState: .Selected)
         return self
     }
     
     // MARK: button Attributed Title
     
-    func attributedTitle(attr: NSAttributedString, state: UIControlState) -> Self {
+    public func attributedTitle(attr: NSAttributedString, state: UIControlState) -> Self {
         setAttributedTitle(attr, forState: state)
         return self
     }
     
-    func normalStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func normalStateAttributedTitle(attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, forState: .Normal)
         return self
     }
 
-    func selectedStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func selectedStateAttributedTitle(attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, forState: .Selected)
         return self
     }
 
-    func highLightedStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func highLightedStateAttributedTitle(attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, forState: .Highlighted)
         return self
     }

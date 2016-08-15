@@ -5,7 +5,7 @@ s.name          = "AFUIKit"
 s.version       = "1.0.0"
 s.license       = { :type => "MIT", :file => "LICENSE" }
 s.summary       = "Swift UIKit chained calls Framework"
-s.homepage      = "https://github.com/Wzxhaha/WZXSSL"
+s.homepage      = "https://github.com/myafer"
 s.author        = { "myafer" => "791143125@qq.com" }
 s.source        = { :git => "https://github.com/myafer/AFUIKit.git", :tag => "#{s.version}" }
 s.requires_arc  = true
