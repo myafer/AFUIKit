@@ -6,3 +6,7 @@ UI库的链式调用，减少UI控件代码量。
 ---
 
 ![code](https://raw.githubusercontent.com/myafer/AFUIKit/master/code.png)
+
+pod install
+
+`pod 'AFUIKit'`
