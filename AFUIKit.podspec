@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 s.name          = "AFUIKit"
 s.version       = "1.0.0"
-s.license       = "MIT"
+s.license       = { :type => "MIT", :file => "LICENSE" }
 s.summary       = "Swift UIKit chained calls Framework"
 s.homepage      = "https://github.com/Wzxhaha/WZXSSL"
 s.author        = { "myafer" => "791143125@qq.com" }
