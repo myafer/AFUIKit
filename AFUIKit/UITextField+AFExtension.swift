@@ -116,42 +116,63 @@ extension UITextField {
         typingAttributes = value
         return self
     }
+    
+    // You can supply custom views which are displayed at the left or right
+    // sides of the text field. Uses for such views could be to show an icon or
+    // a button to operate on the text in the field in an application-defined
+    // manner.
+    //
+    // A very common use is to display a clear button on the right side of the
+    // text field, and a standard clear button is provided.
 
     
-//    weak public var delegate: UITextFieldDelegate? // default is nil. weak reference
-//    public var background: UIImage? // default is nil. draw in border rect. image should be stretchable
-//    public var disabledBackground: UIImage? // default is nil. ignored if background not set. image should be stretchable
-//    
-//    public var editing: Bool { get }
-//    @available(iOS 6.0, *)
-//    public var allowsEditingTextAttributes: Bool // default is NO. allows editing text attributes with style operations and pasting rich text
-//    @available(iOS 6.0, *)
-//    public var typingAttributes: [String : AnyObject]? // automatically resets when the selection changes
-//    
-//    // You can supply custom views which are displayed at the left or right
-//    // sides of the text field. Uses for such views could be to show an icon or
-//    // a button to operate on the text in the field in an application-defined
-//    // manner.
-//    //
-//    // A very common use is to display a clear button on the right side of the
-//    // text field, and a standard clear button is provided.
-//    
-//    public var clearButtonMode: UITextFieldViewMode // sets when the clear button shows up. default is UITextFieldViewModeNever
-//    
-//    public var leftView: UIView? // e.g. magnifying glass
-//    public var leftViewMode: UITextFieldViewMode // sets when the left view shows up. default is UITextFieldViewModeNever
-//    
-//    public var rightView: UIView? // e.g. bookmarks button
-//    public var rightViewMode: UITextFieldViewMode // sets when the right view shows up. default is UITextFieldViewModeNever
-//    // Presented when object becomes first responder.  If set to nil, reverts to following responder chain.  If
-//    // set while first responder, will not take effect until reloadInputViews is called.
-//    public var inputView: UIView?
-//    public var inputAccessoryView: UIView?
-//    
-//    @available(iOS 6.0, *)
-//    public var clearsOnInsertion: Bool // defaults to NO. if YES, the selection UI is hidden, and inserting text will replace the contents of the field. changing the selection will automatically set this to NO.
+    // sets when the clear button shows up. default is UITextFieldViewModeNever
+    public func clearButtonMode(value: UITextFieldViewMode) -> Self {
+        clearButtonMode = value
+        return self
+    }
 
-
-  
+    // e.g. magnifying glass
+    public func leftView(value: UIView?) -> Self {
+        leftView = value
+        return self
+    }
+    
+    // sets when the left view shows up. default is UITextFieldViewModeNever
+    public func leftViewMode(value: UITextFieldViewMode) -> Self {
+        leftViewMode = value
+        return self
+    }
+    
+    // e.g. bookmarks button
+    public func rightView(value: UIView?) -> Self {
+        rightView = value
+        return self
+    }
+    
+    // sets when the right view shows up. default is UITextFieldViewModeNever
+    public func rightViewMode(value: UITextFieldViewMode) -> Self {
+        rightViewMode = value
+        return self
+    }
+    
+    // Presented when object becomes first responder.  If set to nil, reverts to following responder chain.  If
+    // set while first responder, will not take effect until reloadInputViews is called.
+    public func inputView(value: UIView?) -> Self {
+        inputView = value
+        return self
+    }
+    
+    public func inputAccessoryView(value: UIView?) -> Self {
+        inputAccessoryView = value
+        return self
+    }
+    
+    // defaults to NO. if YES, the selection UI is hidden, and inserting text will replace the contents of the field. changing the selection will automatically set this to NO.
+    @available(iOS 6.0, *)
+    public func clearsOnInsertion(value: Bool) -> Self {
+        clearsOnInsertion = value
+        return self
+    }
 
 }

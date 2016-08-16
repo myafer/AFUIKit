@@ -15,26 +15,26 @@ class ViewController: UIViewController {
         
         
         let btn = UIButton()
-                .frame(CGRectMake(100, 100, 100, 40))
-                .bgColor(.redColor())
-                .cornerRadiusHalf()
-                .border(2, color: UIColor.blueColor())
-                .hidden(false)
-                .title("一般", state: .Normal)
-                .selectedStateTitle("选中")
-                .highlightedStateTitle("高亮")
-                .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+                  .frame(CGRectMake(100, 100, 100, 40))
+                  .bgColor(.redColor())
+                  .cornerRadiusHalf()
+                  .border(2, color: UIColor.blueColor())
+                  .hidden(false)
+                  .title("一般", state: .Normal)
+                  .selectedStateTitle("选中")
+                  .highlightedStateTitle("高亮")
+                  .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
         
         let label = UILabel()
-            .frame(CGRectMake(10, 300, 100, 50))
-            .cornerRadiusHalf()
-            .bgColor(.purpleColor())
-            .text("Lable")
-            .shadowColor(.redColor())
-            .shadowOffset(CGSizeMake(5, 5))
-            .textAlignment(.Center)
-        
+                    .frame(CGRectMake(10, 300, 100, 50))
+                    .cornerRadiusHalf()
+                    .bgColor(.purpleColor())
+                    .text("Lable")
+                    .shadowColor(.redColor())
+                    .shadowOffset(CGSizeMake(5, 5))
+                    .textAlignment(.Center)
+
         self.view.addSubview(label)
         
         
