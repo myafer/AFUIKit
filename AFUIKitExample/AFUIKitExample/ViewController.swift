@@ -23,18 +23,21 @@ class ViewController: UIViewController {
                   .title("一般", state: .Normal)
                   .selectedStateTitle("选中")
                   .highlightedStateTitle("高亮")
+                  .hidden(true)
                   .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(btn)
+        
+        let attr = NSMutableAttributedString()
+            .add("123", attributes: [AFFontColor: UIColor.redColor()])
+            .add("456", attributes: [AFFontColor: UIColor.blueColor()])
+            .add("3333", attributes: [AFBgColor: UIColor.redColor()])
         
         let label = UILabel()
                     .frame(CGRectMake(10, 300, 100, 50))
                     .cornerRadiusHalf()
                     .bgColor(.purpleColor())
                     .text("Lable")
-                    .shadowColor(.redColor())
-                    .shadowOffset(CGSizeMake(5, 5))
-                    .textAlignment(.Center)
-
+                    .textAlignment(.Center).attributedText(attr)
         self.view.addSubview(label)
         
         
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
         // Just for fun
         let 视图 = UI视图()
             .位置大小(大小(100, 100, 100, 100))
-            .背景色(.红色())
+            .背景色(.红色()) 
             .半圆角()
             .边线(1, 颜色: .蓝色())
         
@@ -70,13 +73,7 @@ class ViewController: UIViewController {
         sender.selected = !sender.selected
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     
 }
 

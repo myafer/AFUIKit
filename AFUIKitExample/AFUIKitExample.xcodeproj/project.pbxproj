@@ -20,6 +20,8 @@
 		42E4D81D1D51DFF200752645 /* UI颜色.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4D81C1D51DFF200752645 /* UI颜色.swift */; };
 		42E4D81F1D51E11900752645 /* 大小.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4D81E1D51E11900752645 /* 大小.swift */; };
 		42EA946C1D63099500D74BCD /* UITextView+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA946B1D63099500D74BCD /* UITextView+AFExtension.swift */; };
+		42EBC2331D640A1C001B187C /* NSAttributedString+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EBC2321D640A1C001B187C /* NSAttributedString+AFExtension.swift */; };
+		42EBC2351D640B43001B187C /* NSMutableAttributedString+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EBC2341D640B43001B187C /* NSMutableAttributedString+AFExtension.swift */; };
 		42FB2B171D5821BA00BAEE8A /* UIViewController+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B161D5821BA00BAEE8A /* UIViewController+AFExtension.swift */; };
 		42FB2B191D58273300BAEE8A /* UITableViewController+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B181D58273300BAEE8A /* UITableViewController+AFExtension.swift */; };
 		42FB2B1B1D58279700BAEE8A /* UITableView+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B1A1D58279700BAEE8A /* UITableView+AFExtension.swift */; };
@@ -42,6 +44,8 @@
 		42E4D81C1D51DFF200752645 /* UI颜色.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI颜色.swift"; sourceTree = "<group>"; };
 		42E4D81E1D51E11900752645 /* 大小.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "大小.swift"; sourceTree = "<group>"; };
 		42EA946B1D63099500D74BCD /* UITextView+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+AFExtension.swift"; sourceTree = "<group>"; };
+		42EBC2321D640A1C001B187C /* NSAttributedString+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AFExtension.swift"; sourceTree = "<group>"; };
+		42EBC2341D640B43001B187C /* NSMutableAttributedString+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+AFExtension.swift"; sourceTree = "<group>"; };
 		42FB2B161D5821BA00BAEE8A /* UIViewController+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AFExtension.swift"; sourceTree = "<group>"; };
 		42FB2B181D58273300BAEE8A /* UITableViewController+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+AFExtension.swift"; sourceTree = "<group>"; };
 		42FB2B1A1D58279700BAEE8A /* UITableView+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+AFExtension.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				8F7236001D52614E00121000 /* UILabel+AFExtension.swift */,
 				42712D931D5489D6005546E0 /* UIImageView+AFExtension.swift */,
 				8F7236021D52694900121000 /* Just For Fun */,
+				42EBC2321D640A1C001B187C /* NSAttributedString+AFExtension.swift */,
+				42EBC2341D640B43001B187C /* NSMutableAttributedString+AFExtension.swift */,
 			);
 			name = AFUIKit;
 			path = ../AFUIKit;
@@ -191,6 +197,7 @@
 				42EA946C1D63099500D74BCD /* UITextView+AFExtension.swift in Sources */,
 				42E4D8061D51C6A500752645 /* ViewController.swift in Sources */,
 				8F7236011D52614E00121000 /* UILabel+AFExtension.swift in Sources */,
+				42EBC2331D640A1C001B187C /* NSAttributedString+AFExtension.swift in Sources */,
 				42E4D81B1D51DF9600752645 /* UI视图.swift in Sources */,
 				42E4D8171D51C78200752645 /* UIView+AFExtension.swift in Sources */,
 				42FB2B1B1D58279700BAEE8A /* UITableView+AFExtension.swift in Sources */,
@@ -202,6 +209,7 @@
 				42E4D8041D51C6A500752645 /* AppDelegate.swift in Sources */,
 				420013881D61BA1100411A92 /* UITextField+AFExtension.swift in Sources */,
 				42FB2B171D5821BA00BAEE8A /* UIViewController+AFExtension.swift in Sources */,
+				42EBC2351D640B43001B187C /* NSMutableAttributedString+AFExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
