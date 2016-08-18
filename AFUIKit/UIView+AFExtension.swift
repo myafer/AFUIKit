@@ -51,6 +51,16 @@ import UIKit
         return self
     }
     
+    public func tag(value: NSInteger) -> Self {
+        tag = value
+        return self
+    }
+    
+    public func addToView(value: UIView) -> Self {
+        value.addSubview(self)
+        return self
+    }
+    
     public func 位置大小(值: CGRect) -> Self {
         frame = 值
         return self

@@ -9,23 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    lazy var btn: UIButton = {
+        return UIButton()
+            .frame(CGRectMake(100, 60, 100, 40))
+            .bgColor(.redColor())
+            .cornerRadiusHalf()
+            .border(2, color: UIColor.blueColor())
+            .hidden(false)
+            .title("一般", state: .Normal)
+            .selectedStateTitle("选中")
+            .highlightedStateTitle("高亮")
+            .hidden(false)
+            .bgColor(.blackColor())
+            .tag(11)
+            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+    }()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIButton()
+            .frame(CGRectMake(100, 60, 100, 40))
+            .bgColor(.redColor())
+            .cornerRadiusHalf()
+            .border(2, color: UIColor.blueColor())
+            .hidden(false)
+            .title("一般", state: .Normal)
+            .selectedStateTitle("选中")
+            .highlightedStateTitle("高亮")
+            .hidden(false)
+            .bgColor(.blackColor())
+            .tag(11)
+            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            .addToView(self.view)
         
-        let btn = UIButton()
-                  .frame(CGRectMake(100, 100, 100, 40))
-                  .bgColor(.redColor())
-                  .cornerRadiusHalf()
-                  .border(2, color: UIColor.blueColor())
-                  .hidden(false)
-                  .title("一般", state: .Normal)
-                  .selectedStateTitle("选中")
-                  .highlightedStateTitle("高亮")
-                  .hidden(true)
-                  .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        self.view.addSubview(btn)
         
         let attr = NSMutableAttributedString()
             .add("123", attributes: [AFFontColor: UIColor.redColor()])
