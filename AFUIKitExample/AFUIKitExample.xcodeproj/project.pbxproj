@@ -25,6 +25,7 @@
 		42FB2B171D5821BA00BAEE8A /* UIViewController+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B161D5821BA00BAEE8A /* UIViewController+AFExtension.swift */; };
 		42FB2B191D58273300BAEE8A /* UITableViewController+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B181D58273300BAEE8A /* UITableViewController+AFExtension.swift */; };
 		42FB2B1B1D58279700BAEE8A /* UITableView+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB2B1A1D58279700BAEE8A /* UITableView+AFExtension.swift */; };
+		8F6D0EE21D662EC60019B8C7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D0EE11D662EC60019B8C7 /* README.md */; };
 		8F7236011D52614E00121000 /* UILabel+AFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7236001D52614E00121000 /* UILabel+AFExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		42FB2B161D5821BA00BAEE8A /* UIViewController+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AFExtension.swift"; sourceTree = "<group>"; };
 		42FB2B181D58273300BAEE8A /* UITableViewController+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+AFExtension.swift"; sourceTree = "<group>"; };
 		42FB2B1A1D58279700BAEE8A /* UITableView+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+AFExtension.swift"; sourceTree = "<group>"; };
+		8F6D0EE11D662EC60019B8C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F7236001D52614E00121000 /* UILabel+AFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+AFExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 		42E4D7F71D51C6A500752645 = {
 			isa = PBXGroup;
 			children = (
+				8F6D0EE11D662EC60019B8C7 /* README.md */,
 				42E4D8151D51C6ED00752645 /* AFUIKit */,
 				42E4D8021D51C6A500752645 /* AFUIKitExample */,
 				42E4D8011D51C6A500752645 /* Products */,
@@ -205,6 +208,7 @@
 				42E4D81D1D51DFF200752645 /* UI颜色.swift in Sources */,
 				42E4D81F1D51E11900752645 /* 大小.swift in Sources */,
 				42712D941D5489D6005546E0 /* UIImageView+AFExtension.swift in Sources */,
+				8F6D0EE21D662EC60019B8C7 /* README.md in Sources */,
 				42E4D8191D51CC1100752645 /* UIButton+AFExtension.swift in Sources */,
 				42E4D8041D51C6A500752645 /* AppDelegate.swift in Sources */,
 				420013881D61BA1100411A92 /* UITextField+AFExtension.swift in Sources */,
