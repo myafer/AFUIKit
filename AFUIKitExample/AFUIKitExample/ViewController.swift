@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         
         let btn = UIButton()
-                  .frame(CGRectMake(100, 100, 100, 40))
+                  .frame(CGRect(x: 100, y: 100, width: 100, height: 40))
                   .bgColor(.redColor())
                   .cornerRadiusHalf()
                   .border(2, color: UIColor.blueColor())
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             .add("3333", attributes: [AFBgColor: UIColor.redColor()])
         
         let label = UILabel()
-                    .frame(CGRectMake(10, 300, 100, 50))
+                    .frame(CGRect(x: 10, y: 300, width: 100, height: 50))
                     .cornerRadiusHalf()
                     .bgColor(.purpleColor())
                     .text("Lable")
