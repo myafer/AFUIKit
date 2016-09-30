@@ -10,12 +10,14 @@ import UIKit
 
 extension UIColor {
 
-    
-    internal static func 红色() -> UIColor {
-        return UIColor.redColor()
+   open class var 蓝色: UIColor  {
+        get {
+            return .blue
+        }
     }
-    
-    internal static func 蓝色() -> UIColor {
-        return UIColor.blueColor()
+   open class var 红色: UIColor  {
+        get {
+            return .red
+        }
     }
 }

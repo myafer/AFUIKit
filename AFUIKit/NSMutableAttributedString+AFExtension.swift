@@ -72,9 +72,9 @@ public let AFVerticalGlyphForm  = NSVerticalGlyphFormAttributeName
 
 extension NSMutableAttributedString {
     
-    public func add(string: String, attributes: [String : AnyObject]?) -> Self {
+    public func append_attr(_ string: String, _ attributes: [String : AnyObject]?) -> Self {
         let attr = NSAttributedString.init(string: string, attributes: attributes)
-        appendAttributedString(attr)
+        append(attr)
         return self
     }
 

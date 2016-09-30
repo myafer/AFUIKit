@@ -10,27 +10,27 @@ import UIKit
 
  extension UIView {
 
-    public func frame(value: CGRect) -> Self {
+    public func frame(_ value: CGRect) -> Self {
         frame = value
         return self
     }
     
-    public func userInteractionEnabled(value: Bool) -> Self {
-        userInteractionEnabled = value
+    public func userInteractionEnabled(_ value: Bool) -> Self {
+        isUserInteractionEnabled = value
         return self
     }
     
-    public func backgroundColor(value: UIColor) -> Self {
+    public func backgroundColor(_ value: UIColor) -> Self {
         backgroundColor = value
         return self
     }
     
-    public func bgColor(value: UIColor) -> Self {
+    public func bgColor(_ value: UIColor) -> Self {
         backgroundColor = value
         return self
     }
     
-    public func cornerRadius(value: CGFloat) -> Self {
+    public func cornerRadius(_ value: CGFloat) -> Self {
         layer.cornerRadius = value
         return self
     }
@@ -40,43 +40,44 @@ import UIKit
         return self
     }
     
-    public func border(width: CGFloat, color: UIColor) -> Self {
+    public func border(_ width: CGFloat, _ color: UIColor) -> Self {
         layer.borderWidth = width
-        layer.borderColor = color.CGColor
+        layer.borderColor = color.cgColor
         return self
     }
     
-    public func hidden(value: Bool) -> Self {
-        hidden = value
+    public func hidden(_ value: Bool) -> Self {
+        isHidden = value
         return self
     }
     
-    public func tag(value: NSInteger) -> Self {
+    public func tag(_ value: NSInteger) -> Self {
         tag = value
         return self
     }
     
-    public func addToView(value: UIView) -> Self {
+    @discardableResult
+    public func addToView(_ value: UIView) -> Self {
         value.addSubview(self)
         return self
     }
     
-    public func 位置大小(值: CGRect) -> Self {
+    public func 位置大小(_ 值: CGRect) -> Self {
         frame = 值
         return self
     }
     
-    public func 交互(值: Bool) -> Self {
-        userInteractionEnabled = 值
+    public func 交互(_ 值: Bool) -> Self {
+        isUserInteractionEnabled = 值
         return self
     }
     
-    public func 背景色(值: UIColor) -> Self {
+    public func 背景色(_ 值: UIColor) -> Self {
         backgroundColor = 值
         return self
     }
     
-    public func 圆角(值: CGFloat) -> Self {
+    public func 圆角(_ 值: CGFloat) -> Self {
         layer.cornerRadius = 值
         return self
     }
@@ -86,17 +87,22 @@ import UIKit
         return self
     }
     
-    public func 边线(线宽: CGFloat, 颜色: UIColor) -> Self {
+    public func 边线(_ 线宽: CGFloat, _ 颜色: UIColor) -> Self {
         layer.borderWidth = 线宽
-        layer.borderColor = 颜色.CGColor
+        layer.borderColor = 颜色.cgColor
         return self
     }
     
-    public func 隐藏(值: Bool) -> Self {
-        hidden = 值
+    public func 隐藏(_ 值: Bool) -> Self {
+        isHidden = 值
         return self
     }
 
+    @discardableResult
+    public func 添加视图(_ 视图: UIView) -> Self {
+        self.addSubview(视图)
+        return self
+    }
     
     
 }

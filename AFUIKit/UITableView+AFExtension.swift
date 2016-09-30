@@ -10,118 +10,118 @@ import UIKit
 
  extension UITableView {
         
-    public func dataSource(value: UITableViewDataSource?) -> Self {
+    public func dataSource(_ value: UITableViewDataSource?) -> Self {
         dataSource = value
         return self
     }
 
-//    public func delegate(value: UITableViewDelegate?) -> Self {
+//    public func delegate(_ value: UITableViewDelegate?) -> Self {
 //        delegate = value
 //        return self
 //    }
    
-    public func rowHeight(value: CGFloat) -> Self {
+    public func rowHeight(_ value: CGFloat) -> Self {
         rowHeight = value
         return self
     }
     
-    public func sectionHeaderHeight(value: CGFloat) -> Self {
+    public func sectionHeaderHeight(_ value: CGFloat) -> Self {
         sectionHeaderHeight = value
         return self
     }
     
-    public func sectionFooterHeight(value: CGFloat) -> Self {
+    public func sectionFooterHeight(_ value: CGFloat) -> Self {
         sectionFooterHeight = value
         return self
     }
     
     @available(iOS 7.0, *)
-    public func estimatedRowHeight(value: CGFloat) -> Self {
+    public func estimatedRowHeight(_ value: CGFloat) -> Self {
         estimatedRowHeight = value
         return self
     }
     
     @available(iOS 7.0, *)
-    public func estimatedSectionHeaderHeight(value: CGFloat) -> Self {
+    public func estimatedSectionHeaderHeight(_ value: CGFloat) -> Self {
         estimatedSectionHeaderHeight = value
         return self
     }
     
     @available(iOS 7.0, *)
-    public func estimatedSectionFooterHeight(value: CGFloat) -> Self {
+    public func estimatedSectionFooterHeight(_ value: CGFloat) -> Self {
         estimatedSectionFooterHeight = value
         return self
     }
     
     @available(iOS 7.0, *)
-    public func separatorInset(value: UIEdgeInsets) -> Self {
+    public func separatorInset(_ value: UIEdgeInsets) -> Self {
         separatorInset = value
         return self
     }
     
     @available(iOS 3.2, *)
-    public func backgroundView(value: UIView?) -> Self {
+    public func backgroundView(_ value: UIView?) -> Self {
         backgroundView = value
         return self
     }
     
-    public func sectionIndexMinimumDisplayRowCount(value: Int) -> Self {
+    public func sectionIndexMinimumDisplayRowCount(_ value: Int) -> Self {
         sectionIndexMinimumDisplayRowCount = value
         return self
     }
 
     @available(iOS 6.0, *)
-    public func sectionIndexColor(value: UIColor?) -> Self {
+    public func sectionIndexColor(_ value: UIColor?) -> Self {
         sectionIndexColor = value
         return self
     }
     
     @available(iOS 7.0, *)
-    public func sectionIndexBackgroundColor(value: UIColor?) -> Self {
+    public func sectionIndexBackgroundColor(_ value: UIColor?) -> Self {
         sectionIndexBackgroundColor = value
         return self
     }
     
     @available(iOS 6.0, *)
-    public func sectionIndexTrackingBackgroundColor(value: UIColor?) -> Self {
+    public func sectionIndexTrackingBackgroundColor(_ value: UIColor?) -> Self {
         sectionIndexTrackingBackgroundColor = value
         return self
     }
 
-    public func separatorStyle(value: UITableViewCellSeparatorStyle) -> Self {
+    public func separatorStyle(_ value: UITableViewCellSeparatorStyle) -> Self {
         separatorStyle = value
         return self
     }
 
-    public func separatorColor(value: UIColor?) -> Self {
+    public func separatorColor(_ value: UIColor?) -> Self {
         separatorColor = value
         return self
     }
 
     @available(iOS 8.0, *)
-    public func separatorEffect(value: UIVisualEffect?) -> Self {
+    public func separatorEffect(_ value: UIVisualEffect?) -> Self {
         separatorEffect = value
         return self
     }
 
     @available(iOS 9.0, *)
-    public func cellLayoutMarginsFollowReadableWidth(value: Bool) -> Self {
+    public func cellLayoutMarginsFollowReadableWidth(_ value: Bool) -> Self {
         cellLayoutMarginsFollowReadableWidth = value
         return self
     }
 
-    public func tableHeaderView(value: UIView?) -> Self {
+    public func tableHeaderView(_ value: UIView?) -> Self {
         tableHeaderView = value
         return self
     }
     
-    public func tableFooterView(value: UIView?) -> Self {
+    public func tableFooterView(_ value: UIView?) -> Self {
         tableFooterView = value
         return self
     }
     
     @available(iOS 9.0, *)
-    public func remembersLastFocusedIndexPath(value: Bool) -> Self {
+    public func remembersLastFocusedIndexPath(_ value: Bool) -> Self {
         remembersLastFocusedIndexPath = value
         return self
     }

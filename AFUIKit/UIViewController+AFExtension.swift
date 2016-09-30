@@ -12,7 +12,11 @@ import UIKit
 
 // 
     
-    
+    open var 视图: UIView! {
+        get {
+            return view
+        }
+    }
 
     
 }

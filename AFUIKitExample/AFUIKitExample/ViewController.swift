@@ -8,23 +8,26 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     
     
     lazy var btn: UIButton = {
+        
         return UIButton()
-            .frame(CGRectMake(100, 60, 100, 40))
-            .bgColor(.redColor())
+            .frame(CGRect(x: 100, y: 60, width: 100, height: 40))
+            .bgColor(.red)
             .cornerRadiusHalf()
-            .border(2, color: UIColor.blueColor())
+            .border(2, .blue)
             .hidden(false)
-            .title("一般", state: .Normal)
+            .title("一般", state: .normal)
             .selectedStateTitle("选中")
             .highlightedStateTitle("高亮")
             .hidden(false)
-            .bgColor(.blackColor())
+            .bgColor(.black)
             .tag(11)
-            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            .target(self, action: #selector(ViewController.test(sender:)), forControlEvents: .touchUpInside)
     }()
 
 
@@ -32,66 +35,66 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         UIButton()
-            .frame(CGRectMake(100, 60, 100, 40))
-            .bgColor(.redColor())
+            .frame(CGRect(x: 100, y: 60, width: 100, height: 40))
+            .bgColor( .red)
             .cornerRadiusHalf()
-            .border(2, color: UIColor.blueColor())
+            .border(2, UIColor.blue)
             .hidden(false)
-            .title("一般", state: .Normal)
+            .title("一般", state: .normal)
             .selectedStateTitle("选中")
             .highlightedStateTitle("高亮")
             .hidden(false)
-            .bgColor(.blackColor())
+            .bgColor(.black)
             .tag(11)
-            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            .target(self, action: #selector(ViewController.test(sender:)), forControlEvents: UIControlEvents.touchUpInside)
             .addToView(self.view)
         
 
         
         let attr = NSMutableAttributedString()
-            .add("123", attributes: [AFFontColor: UIColor.redColor()])
-            .add("456", attributes: [AFFontColor: UIColor.blueColor()])
-            .add("3333", attributes: [AFBgColor: UIColor.redColor()])
+            .append_attr("123", [AFFontColor: UIColor.red])
+            .append_attr("456",  [AFFontColor: UIColor.blue])
+            .append_attr("3333",  [AFBgColor: UIColor.red])
         
         let label = UILabel()
-                    .frame(CGRect(x: 10, y: 300, width: 100, height: 50))
-                    .cornerRadiusHalf()
-                    .bgColor(.purpleColor())
-                    .text("Lable")
-                    .textAlignment(.Center).attributedText(attr)
+            .frame(CGRect(x: 10, y: 300, width: 100, height: 50))
+            .cornerRadiusHalf()
+            .bgColor( .purple)
+            .text("Lable")
+            .textAlignment(.center)
+            .attributedText(attr)
         self.view.addSubview(label)
         
         
         
-        // Just for fun
+//        // Just for fun
         let 视图 = UI视图()
             .位置大小(大小(100, 100, 100, 100))
-            .背景色(.红色()) 
-            .半圆角()
-            .边线(1, 颜色: .蓝色())
-        
-        self.view.addSubview(视图)
+            .背景色(.红色)
+            .圆角(30)
+            .边线(1, .蓝色)
         
         
+        self.视图.添加视图(视图)
+
         let btn1 = UIButton()
-        btn1.frame = CGRectMake(100, 200, 100, 40)
-        btn1.backgroundColor = UIColor.redColor()
+        btn1.frame = CGRect(x: 100, y: 200, width: 100, height: 40)
+        btn1.backgroundColor = UIColor.red
         btn1.layer.cornerRadius = btn1.frame.height / 2.0
-        btn1.layer.borderColor = UIColor.blueColor().CGColor
+        btn1.layer.borderColor = UIColor.blue.cgColor
         btn1.layer.borderWidth = 2.0
-        btn1.hidden = false
-        btn1.setTitle("一般", forState: UIControlState.Normal)
-        btn1.setTitle("选中", forState: UIControlState.Selected)
-        btn1.setTitle("高亮", forState: UIControlState.Highlighted)
-        btn1.addTarget(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        btn1.isHidden = false
+        btn1.setTitle("一般", for: UIControlState.normal)
+        btn1.setTitle("选中", for: UIControlState.selected)
+        btn1.setTitle("高亮", for: UIControlState.highlighted)
+        btn1.addTarget(self, action: #selector(ViewController.test(sender:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(btn1)
-        
         
     }
 
 
     func test(sender: UIButton) {
-        sender.selected = !sender.selected
+        sender.isSelected = !sender.isSelected
     }
 
 
