@@ -110,7 +110,7 @@ extension UIButton {
     
     // MARK: button background image
     
-    public func backgroundImage(image: UIImage, state: UIControlState) -> Self {
+    public func backgroundImage(_ image: UIImage, state: UIControlState) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
@@ -133,22 +133,22 @@ extension UIButton {
     
     // MARK: button Attributed Title
     
-    public func attributedTitle(attr: NSAttributedString, state: UIControlState) -> Self {
+    public func attributedTitle(_ attr: NSAttributedString, state: UIControlState) -> Self {
         setAttributedTitle(attr, for: state)
         return self
     }
     
-    public func normalStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func normalStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .normal)
         return self
     }
 
-    public func selectedStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func selectedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .selected)
         return self
     }
 
-    public func highLightedStateAttributedTitle(attr: NSAttributedString) -> Self {
+    public func highLightedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .highlighted)
         return self
     }

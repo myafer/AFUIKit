@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             .hidden(false)
             .bgColor(.black)
             .tag(11)
-            .target(self, action: #selector(ViewController.test(sender:)), forControlEvents: .touchUpInside)
+            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: .touchUpInside)
     }()
 
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             .hidden(false)
             .bgColor(.black)
             .tag(11)
-            .target(self, action: #selector(ViewController.test(sender:)), forControlEvents: UIControlEvents.touchUpInside)
+            .target(self, action: #selector(ViewController.test(_:)), forControlEvents: UIControlEvents.touchUpInside)
             .addToView(self.view)
         
 
@@ -64,7 +64,6 @@ class ViewController: UIViewController {
             .textAlignment(.center)
             .attributedText(attr)
         self.view.addSubview(label)
-        
         
         
 //        // Just for fun
@@ -87,13 +86,13 @@ class ViewController: UIViewController {
         btn1.setTitle("一般", for: UIControlState.normal)
         btn1.setTitle("选中", for: UIControlState.selected)
         btn1.setTitle("高亮", for: UIControlState.highlighted)
-        btn1.addTarget(self, action: #selector(ViewController.test(sender:)), for: UIControlEvents.touchUpInside)
+        btn1.addTarget(self, action: #selector(ViewController.test(_:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(btn1)
         
     }
 
 
-    func test(sender: UIButton) {
+    func test(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
 
